@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, escape,session
 from flask import copy_current_request_context
 from letter_search import letter
-
 from DBcm import UseDatabase, ConnectionError, CredentialsError, SQLError
-#
-from threading import Thread
 #导入线程模块
+from threading import Thread
 from checker import check_logged_in
 
 app = Flask(__name__)
